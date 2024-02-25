@@ -3,7 +3,7 @@
 
 This bot has a subscription with an ETH node. When the Mpunks contract has a mint it posts to a discord webhook.
 
-The python api is required to render the Mpunks image on discord. Since the natural image is in SVG format, it is unsupported in discord.  To overcome this, the python api converts SVG to PNG and then uploads to IPFS. This IPFS link is then rendered in discord. The IPFS client used is Pinata.
+The python api is required to render the Mpunks image on discord. Since the natural image is in SVG format, it is unsupported in discord.  To overcome this, the python api converts SVG to PNG and then uploads to  IPFS. This IPFS link is then rendered in discord. The IPFS client used is Pinata.
 
 
 
