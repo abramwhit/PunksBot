@@ -1,0 +1,19 @@
+version: '3'
+services:
+  ipfs_api:
+    build: ./ipfs_api
+    container_name: nft_api
+    volumes:
+      - ./ipfs_api/data:/app/ipfs_api/data
+    command: bash -c "uvicorn main:app --workers 1 --host 0.0.0.0 --port 5000"
+    restart: unless-stopped
+    ports:
+      - "5000:5000"
+    environment:
+      NFT_STORAGE_API_KEY:
+  discord_bot:
+    build: ./discord_bot
+    restart: unless-stopped
+    environment:
+      NODE:  
+      DISCORD: 

@@ -1,0 +1,5 @@
+CairoSVG
+fastapi
+aiohttp
+python-dotenv
+uvicorn
